@@ -1,0 +1,1410 @@
+[2020-04-04 11:27:46,252] INFO [main] ControlCenterConfig values: 
+	auth.bearer.roles.claim = 
+	bootstrap.servers = [localhost:9092]
+	confluent.controlcenter.alert.cluster.down.autocreate = false
+	confluent.controlcenter.alert.cluster.down.send.rate = 12
+	confluent.controlcenter.alert.cluster.down.to.email = 
+	confluent.controlcenter.alert.cluster.down.to.pagerduty.integrationkey = 
+	confluent.controlcenter.alert.cluster.down.to.webhookurl.slack = 
+	confluent.controlcenter.alert.max.trigger.events = 1000
+	confluent.controlcenter.auth.bearer.issuer = Confluent
+	confluent.controlcenter.auth.restricted.roles = []
+	confluent.controlcenter.auth.session.expiration.ms = 0
+	confluent.controlcenter.broker.config.edit.enable = true
+	confluent.controlcenter.command.streams.start.timeout = 300000
+	confluent.controlcenter.command.topic = _confluent-command
+	confluent.controlcenter.command.topic.replication = 3
+	confluent.controlcenter.command.topic.retention.ms = 259200000
+	confluent.controlcenter.connect.cluster = []
+	confluent.controlcenter.consumers.view.enable = true
+	confluent.controlcenter.data.dir = /usr/local/confluent-5.4.1/data/control-center
+	confluent.controlcenter.deprecated.views.enable = false
+	confluent.controlcenter.disk.skew.warning.min.bytes = 1073741824
+	confluent.controlcenter.id = 1
+	confluent.controlcenter.internal.streams.start.timeout = 21600000
+	confluent.controlcenter.internal.topics.changelog.segment.bytes = 134217728
+	confluent.controlcenter.internal.topics.partitions = 4
+	confluent.controlcenter.internal.topics.replication = 3
+	confluent.controlcenter.internal.topics.retention.bytes = -1
+	confluent.controlcenter.internal.topics.retention.ms = 604800000
+	confluent.controlcenter.ksql.advertised.url = []
+	confluent.controlcenter.ksql.enable = true
+	confluent.controlcenter.ksql.url = []
+	confluent.controlcenter.license.manager = _confluent-controlcenter-license-manager-5-4-1
+	confluent.controlcenter.license.manager.enable = true
+	confluent.controlcenter.mail.bounce.address = 
+	confluent.controlcenter.mail.enabled = false
+	confluent.controlcenter.mail.from = c3@confluent.io
+	confluent.controlcenter.mail.host.name = localhost
+	confluent.controlcenter.mail.password = 
+	confluent.controlcenter.mail.port = 587
+	confluent.controlcenter.mail.ssl.checkserveridentity = false
+	confluent.controlcenter.mail.starttls.required = false
+	confluent.controlcenter.mail.username = 
+	confluent.controlcenter.name = _confluent-controlcenter-5-4-1
+	confluent.controlcenter.proactive.support.ui.cta.enable = false
+	confluent.controlcenter.rest.advertised.url = 
+	confluent.controlcenter.rest.compression.enable = true
+	confluent.controlcenter.rest.hsts.enable = true
+	confluent.controlcenter.rest.port = 9021
+	confluent.controlcenter.schema.registry.enable = true
+	confluent.controlcenter.schema.registry.url = [http://localhost:8081]
+	confluent.controlcenter.service.healthcheck.interval.sec = 20
+	confluent.controlcenter.streams.cache.max.bytes.buffering = 1073741824
+	confluent.controlcenter.streams.consumer.session.timeout.ms = 60000
+	confluent.controlcenter.streams.num.stream.threads = 8
+	confluent.controlcenter.streams.producer.compression.type = lz4
+	confluent.controlcenter.streams.producer.delivery.timeout.ms = 2147483647
+	confluent.controlcenter.streams.producer.linger.ms = 500
+	confluent.controlcenter.streams.producer.max.block.ms = 9223372036854775807
+	confluent.controlcenter.streams.producer.retries = 2147483647
+	confluent.controlcenter.streams.producer.retry.backoff.ms = 100
+	confluent.controlcenter.streams.retries = 2147483647
+	confluent.controlcenter.streams.upgrade.from = 2.3
+	confluent.controlcenter.topic.inspection.enable = true
+	confluent.controlcenter.ui.autoupdate.enable = false
+	confluent.controlcenter.ui.data.expired.threshold = 120
+	confluent.controlcenter.ui.replicator.monitoring.enable = true
+	confluent.controlcenter.usage.data.collection.enable = true
+	confluent.controlcenter.webhook.enabled = true
+	confluent.license = 
+	confluent.metadata.basic.auth.user.info = 
+	confluent.metadata.bootstrap.server.urls = []
+	confluent.metrics.topic = _confluent-metrics
+	confluent.metrics.topic.config.validate = false
+	confluent.metrics.topic.max.message.bytes = 10485760
+	confluent.metrics.topic.partitions = 12
+	confluent.metrics.topic.replication = 3
+	confluent.metrics.topic.retention.bytes = -1
+	confluent.metrics.topic.retention.ms = 259200000
+	confluent.metrics.topic.skip.backlog.minutes = 15
+	confluent.monitoring.interceptor.topic = _confluent-monitoring
+	confluent.monitoring.interceptor.topic.config.validate = false
+	confluent.monitoring.interceptor.topic.partitions = 12
+	confluent.monitoring.interceptor.topic.replication = 3
+	confluent.monitoring.interceptor.topic.retention.bytes = -1
+	confluent.monitoring.interceptor.topic.retention.ms = 259200000
+	confluent.monitoring.interceptor.topic.skip.backlog.minutes = 15
+	confluent.support.metrics.customer.id = anonymous
+	confluent.support.metrics.enable = true
+	public.key.path = 
+	zookeeper.connect = localhost:2181
+ (io.confluent.controlcenter.ControlCenterConfig)
+[2020-04-04 11:27:47,833] INFO [main] StreamsConfig values: 
+	application.id = _confluent-controlcenter-5-4-1-1
+	application.server = 
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 100
+	cache.max.bytes.buffering = 1073741824
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndContinueExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class io.confluent.controlcenter.streams.WindowExtractor
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 8
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 3
+	request.timeout.ms = 40000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	rocksdb.config.setter = class io.confluent.controlcenter.streams.RocksDBConfigurator
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /usr/local/confluent-5.4.1/data/control-center/1/kafka-streams
+	topology.optimization = all
+	upgrade.from = 2.3
+	windowstore.changelog.additional.retention.ms = 86400000
+ (org.apache.kafka.streams.StreamsConfig)
+[2020-04-04 11:27:48,239] INFO [main] setting topic names _confluent-monitoring (io.confluent.controlcenter.streams.WindowExtractor)
+[2020-04-04 11:27:48,257] INFO [main] transformerStore=MonitoringVerifierStore (io.confluent.controlcenter.streams.StreamsModule)
+[2020-04-04 11:27:48,287] INFO [main] transformerStore=MonitoringTriggerStore (io.confluent.controlcenter.streams.StreamsModule)
+[2020-04-04 11:27:48,287] INFO [main] transformerStore=TriggerActionsStore (io.confluent.controlcenter.streams.StreamsModule)
+[2020-04-04 11:27:48,288] INFO [main] transformerStore=TriggerEventsStore (io.confluent.controlcenter.streams.StreamsModule)
+[2020-04-04 11:27:48,288] INFO [main] transformerStore=AlertHistoryStore (io.confluent.controlcenter.streams.StreamsModule)
+[2020-04-04 11:27:48,310] INFO [main] ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = confluent-control-center-heartbeat-sender-1
+	compression.type = lz4
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 500
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 10485760
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 500
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig)
+[2020-04-04 11:27:48,310] INFO [main] ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = confluent-control-center-heartbeat-sender-1
+	compression.type = lz4
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 500
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 10485760
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 500
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig)
+[2020-04-04 11:27:48,480] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,480] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,480] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,480] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,480] INFO [main] Kafka startTimeMs: 1585970868479 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,480] INFO [main] Kafka startTimeMs: 1585970868479 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,577] INFO [main] StreamsConfig values: 
+	application.id = _confluent-controlcenter-5-4-1-1-command
+	application.server = 
+	bootstrap.servers = [localhost:9092]
+	buffered.records.per.partition = 1000
+	cache.max.bytes.buffering = 0
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+	max.task.idle.ms = 0
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /usr/local/confluent-5.4.1/data/control-center/1/cp-command
+	topology.optimization = all
+	upgrade.from = 2.3
+	windowstore.changelog.additional.retention.ms = 86400000
+ (org.apache.kafka.streams.StreamsConfig)
+[2020-04-04 11:27:48,749] INFO [main] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] Kafka Streams version: 5.4.1-ce (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:48,749] INFO [main] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] Kafka Streams commit ID: 6090ac47120d9356 (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:48,832] INFO [main] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:48,832] INFO [main] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-admin
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:48,867] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,867] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,867] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,867] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,867] INFO [main] Kafka startTimeMs: 1585970868867 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,867] INFO [main] Kafka startTimeMs: 1585970868867 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:48,873] INFO [main] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] Creating restore consumer client (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:48,884] INFO [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:48,884] INFO [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:48,884] INFO [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,066] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,066] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,066] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,066] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,066] INFO [main] Kafka startTimeMs: 1585970869066 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,066] INFO [main] Kafka startTimeMs: 1585970869066 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,116] INFO [main] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] Creating shared producer client (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:49,116] INFO [main] ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer
+	compression.type = lz4
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 500
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 10485760
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig)
+[2020-04-04 11:27:49,116] INFO [main] ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer
+	compression.type = lz4
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 500
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 10485760
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig)
+[2020-04-04 11:27:49,145] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,145] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,145] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,145] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,145] INFO [main] Kafka startTimeMs: 1585970869145 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,145] INFO [main] Kafka startTimeMs: 1585970869145 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,151] INFO [main] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] Creating consumer client (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:49,175] INFO [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = _confluent-controlcenter-5-4-1-1-command
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,175] INFO [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = _confluent-controlcenter-5-4-1-1-command
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,175] INFO [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = _confluent-controlcenter-5-4-1-1-command
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,227] INFO [main] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-consumer] Eager rebalancing enabled now for upgrade from 2.3.x (org.apache.kafka.streams.processor.internals.assignment.AssignorConfiguration)
+[2020-04-04 11:27:49,282] WARN [main] The configuration 'admin.retries' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,282] WARN [main] The configuration 'admin.retries' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,282] WARN [main] The configuration 'admin.retries' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,282] WARN [main] The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,282] WARN [main] The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,282] WARN [main] The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig)
+[2020-04-04 11:27:49,282] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,282] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,282] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,282] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,282] INFO [main] Kafka startTimeMs: 1585970869282 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,282] INFO [main] Kafka startTimeMs: 1585970869282 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,339] INFO [main] ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = c3-command
+	compression.type = lz4
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class io.confluent.serializers.ProtoSerde
+	linger.ms = 500
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 10485760
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.serializers.ProtoSerde
+ (org.apache.kafka.clients.producer.ProducerConfig)
+[2020-04-04 11:27:49,339] INFO [main] ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = c3-command
+	compression.type = lz4
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class io.confluent.serializers.ProtoSerde
+	linger.ms = 500
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 10485760
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.serializers.ProtoSerde
+ (org.apache.kafka.clients.producer.ProducerConfig)
+[2020-04-04 11:27:49,374] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,374] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,374] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,374] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,374] INFO [main] Kafka startTimeMs: 1585970869374 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,374] INFO [main] Kafka startTimeMs: 1585970869374 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,545] INFO [main] RestConfig values: 
+	access.control.allow.headers = 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	authentication.method = NONE
+	authentication.realm = 
+	authentication.roles = [*]
+	authentication.skip.paths = []
+	compression.enable = true
+	debug = false
+	idle.timeout.ms = 30000
+	listeners = []
+	metric.reporters = []
+	metrics.jmx.prefix = rest-utils
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	metrics.tag.map = []
+	port = 9021
+	request.logger.name = io.confluent.rest-utils.requests
+	resource.extension.classes = []
+	response.mediatype.default = application/json
+	response.mediatype.preferred = [application/json]
+	rest.servlet.initializor.classes = []
+	shutdown.graceful.ms = 1000
+	ssl.cipher.suites = []
+	ssl.client.auth = false
+	ssl.client.authentication = NONE
+	ssl.enabled.protocols = []
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = 
+	ssl.keystore.location = 
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = 
+	ssl.trustmanager.algorithm = 
+	ssl.truststore.location = 
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	websocket.path.prefix = /ws
+	websocket.servlet.initializor.classes = []
+ (io.confluent.rest.RestConfig)
+[2020-04-04 11:27:49,596] INFO [kafka-producer-network-thread | confluent-control-center-heartbeat-sender-1] [Producer clientId=confluent-control-center-heartbeat-sender-1] Cluster ID: GCKN0xyNTTmAmT4dMNIUGQ (org.apache.kafka.clients.Metadata)
+[2020-04-04 11:27:49,596] INFO [kafka-producer-network-thread | confluent-control-center-heartbeat-sender-1] [Producer clientId=confluent-control-center-heartbeat-sender-1] Cluster ID: GCKN0xyNTTmAmT4dMNIUGQ (org.apache.kafka.clients.Metadata)
+[2020-04-04 11:27:49,597] INFO [kafka-producer-network-thread | _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer] [Producer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer] Cluster ID: GCKN0xyNTTmAmT4dMNIUGQ (org.apache.kafka.clients.Metadata)
+[2020-04-04 11:27:49,597] INFO [kafka-producer-network-thread | _confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer] [Producer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer] Cluster ID: GCKN0xyNTTmAmT4dMNIUGQ (org.apache.kafka.clients.Metadata)
+[2020-04-04 11:27:49,598] INFO [kafka-producer-network-thread | c3-command] [Producer clientId=c3-command] Cluster ID: GCKN0xyNTTmAmT4dMNIUGQ (org.apache.kafka.clients.Metadata)
+[2020-04-04 11:27:49,598] INFO [kafka-producer-network-thread | c3-command] [Producer clientId=c3-command] Cluster ID: GCKN0xyNTTmAmT4dMNIUGQ (org.apache.kafka.clients.Metadata)
+[2020-04-04 11:27:49,645] INFO [main] RestConfig values: 
+	access.control.allow.headers = 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	authentication.method = NONE
+	authentication.realm = 
+	authentication.roles = [*]
+	authentication.skip.paths = []
+	compression.enable = true
+	debug = false
+	idle.timeout.ms = 30000
+	listeners = []
+	metric.reporters = []
+	metrics.jmx.prefix = rest-utils
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	metrics.tag.map = []
+	port = 9021
+	request.logger.name = io.confluent.rest-utils.requests
+	resource.extension.classes = []
+	response.mediatype.default = application/json
+	response.mediatype.preferred = [application/json]
+	rest.servlet.initializor.classes = []
+	shutdown.graceful.ms = 1000
+	ssl.cipher.suites = []
+	ssl.client.auth = false
+	ssl.client.authentication = NONE
+	ssl.enabled.protocols = []
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = 
+	ssl.keystore.location = 
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = 
+	ssl.trustmanager.algorithm = 
+	ssl.truststore.location = 
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	websocket.path.prefix = /ws
+	websocket.servlet.initializor.classes = []
+ (io.confluent.rest.RestConfig)
+[2020-04-04 11:27:49,672] INFO [main] getPersistentStoreTopicNames=[_confluent-controlcenter-5-4-1-1-MonitoringVerifierStore-changelog, _confluent-controlcenter-5-4-1-1-MonitoringTriggerStore-changelog, _confluent-controlcenter-5-4-1-1-TriggerActionsStore-changelog, _confluent-controlcenter-5-4-1-1-AlertHistoryStore-changelog, _confluent-controlcenter-5-4-1-1-TriggerEventsStore-changelog] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,685] INFO [main] getLruStoreTopicNames=[_confluent-controlcenter-5-4-1-1-group-aggregate-store-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-monitoring-aggregate-rekey-store-changelog, _confluent-controlcenter-5-4-1-1-group-aggregate-store-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-aggregate-topic-partition-store-changelog] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,685] INFO [main] getWindowedStoreTopicNames=[_confluent-controlcenter-5-4-1-1-MonitoringMessageAggregatorWindows-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-Group-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-aggregatedTopicPartitionTableWindows-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-MonitoringStream-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-MonitoringMessageAggregatorWindows-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-KSTREAM-OUTEROTHER-0000000105-store-changelog, _confluent-controlcenter-5-4-1-1-KSTREAM-OUTERTHIS-0000000104-store-changelog, _confluent-controlcenter-5-4-1-1-MonitoringStream-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-aggregatedTopicPartitionTableWindows-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-MetricsAggregateStore-changelog, _confluent-controlcenter-5-4-1-1-Group-ONE_MINUTE-changelog] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,688] INFO [main] getLogAppendTimeIntermediateTopicNames=[_confluent-controlcenter-5-4-1-1-cluster-rekey, _confluent-controlcenter-5-4-1-1-monitoring-message-rekey-store, _confluent-controlcenter-5-4-1-1-actual-group-consumption-rekey, _confluent-controlcenter-5-4-1-1-group-stream-extension-rekey, _confluent-controlcenter-5-4-1-1-expected-group-consumption-rekey, _confluent-controlcenter-5-4-1-1-monitoring-trigger-event-rekey, _confluent-controlcenter-5-4-1-1-metrics-trigger-measurement-rekey] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,696] INFO [main] intermediateTopics=[_confluent-controlcenter-5-4-1-1-MetricsAggregateStore-repartition] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,725] INFO [main] CONTROL CENTER UI
+
+By using Control Center, subject to any license you may have with Confluent, you agree to the Confluent Data Protection Agreement.  In particular, please note that the version check feature of Control Center is enabled.
+
+With this enabled, this instance is configured to collect and report certain data (version information, time stamped session IDs, instance ID, instance uptime, license key for subscription customers, IP address, and other product data)  to Confluent, Inc. ("Confluent") or its parent, subsidiaries, affiliates or service providers every hour.  By proceeding with `confluent.support.metrics.enable=true`, you agree to all such collection, transfer and use of Version information by Confluent. You can turn the version check feature off by setting `confluent.support.metrics.enable=false` in the Control Center configuration and restarting Control Center.  See the Confluent Enterprise documentation for further information.
+ (io.confluent.controlcenter.healthcheck.HealthCheck)
+[2020-04-04 11:27:49,750] INFO [main] Starting Control Center version=5.4.1 (io.confluent.controlcenter.ControlCenter)
+[2020-04-04 11:27:49,753] INFO [main] getPersistentStoreTopicNames=[_confluent-controlcenter-5-4-1-1-MonitoringVerifierStore-changelog, _confluent-controlcenter-5-4-1-1-MonitoringTriggerStore-changelog, _confluent-controlcenter-5-4-1-1-TriggerActionsStore-changelog, _confluent-controlcenter-5-4-1-1-AlertHistoryStore-changelog, _confluent-controlcenter-5-4-1-1-TriggerEventsStore-changelog] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,753] INFO [main] getLruStoreTopicNames=[_confluent-controlcenter-5-4-1-1-group-aggregate-store-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-monitoring-aggregate-rekey-store-changelog, _confluent-controlcenter-5-4-1-1-group-aggregate-store-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-aggregate-topic-partition-store-changelog] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,753] INFO [main] getWindowedStoreTopicNames=[_confluent-controlcenter-5-4-1-1-MonitoringMessageAggregatorWindows-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-Group-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-aggregatedTopicPartitionTableWindows-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-MonitoringStream-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-MonitoringMessageAggregatorWindows-THREE_HOURS-changelog, _confluent-controlcenter-5-4-1-1-KSTREAM-OUTEROTHER-0000000105-store-changelog, _confluent-controlcenter-5-4-1-1-KSTREAM-OUTERTHIS-0000000104-store-changelog, _confluent-controlcenter-5-4-1-1-MonitoringStream-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-aggregatedTopicPartitionTableWindows-ONE_MINUTE-changelog, _confluent-controlcenter-5-4-1-1-MetricsAggregateStore-changelog, _confluent-controlcenter-5-4-1-1-Group-ONE_MINUTE-changelog] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,753] INFO [main] getLogAppendTimeIntermediateTopicNames=[_confluent-controlcenter-5-4-1-1-cluster-rekey, _confluent-controlcenter-5-4-1-1-monitoring-message-rekey-store, _confluent-controlcenter-5-4-1-1-actual-group-consumption-rekey, _confluent-controlcenter-5-4-1-1-group-stream-extension-rekey, _confluent-controlcenter-5-4-1-1-expected-group-consumption-rekey, _confluent-controlcenter-5-4-1-1-monitoring-trigger-event-rekey, _confluent-controlcenter-5-4-1-1-metrics-trigger-measurement-rekey] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,753] INFO [main] intermediateTopics=[_confluent-controlcenter-5-4-1-1-MetricsAggregateStore-repartition] (io.confluent.controlcenter.ControlCenterConfigModule)
+[2020-04-04 11:27:49,754] INFO [main] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,754] INFO [main] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'consumer.session.timeout.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'consumer.session.timeout.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'producer.max.block.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'producer.max.block.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'producer.retries' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'producer.retries' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'upgrade.from' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,772] WARN [main] The configuration 'upgrade.from' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.retry.backoff.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.retry.backoff.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.linger.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.linger.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.delivery.timeout.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.delivery.timeout.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'cache.max.bytes.buffering' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'cache.max.bytes.buffering' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.compression.type' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'producer.compression.type' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'num.stream.threads' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] WARN [main] The configuration 'num.stream.threads' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig)
+[2020-04-04 11:27:49,773] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,773] INFO [main] Kafka version: 5.4.1-ce (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,773] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,773] INFO [main] Kafka commitId: 6090ac47120d9356 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,773] INFO [main] Kafka startTimeMs: 1585970869773 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,773] INFO [main] Kafka startTimeMs: 1585970869773 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-04 11:27:49,871] ERROR [main] 3 brokers are required but only found 1. Check the topic replication settings in the properties file or add more brokers to your cluster (io.confluent.controlcenter.KafkaHelper)
+[2020-04-04 11:27:51,873] ERROR [main] 3 brokers are required but only found 1. Check the topic replication settings in the properties file or add more brokers to your cluster (io.confluent.controlcenter.KafkaHelper)
+[2020-04-04 11:27:53,879] ERROR [main] 3 brokers are required but only found 1. Check the topic replication settings in the properties file or add more brokers to your cluster (io.confluent.controlcenter.KafkaHelper)
+[2020-04-04 11:27:55,883] ERROR [main] 3 brokers are required but only found 1. Check the topic replication settings in the properties file or add more brokers to your cluster (io.confluent.controlcenter.KafkaHelper)
+[2020-04-04 11:27:57,884] INFO [main] Shutting down Kafka Streams (io.confluent.controlcenter.streams.KafkaStreamsManager)
+[2020-04-04 11:27:57,889] INFO [main] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] State transition from CREATED to PENDING_SHUTDOWN (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:57,897] INFO [kafka-streams-close-thread] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] Informed to shut down (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:57,897] INFO [kafka-streams-close-thread] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] State transition from CREATED to PENDING_SHUTDOWN (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:57,897] INFO [kafka-streams-close-thread] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] Shutting down (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:57,901] INFO [kafka-streams-close-thread] [Consumer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions (org.apache.kafka.clients.consumer.KafkaConsumer)
+[2020-04-04 11:27:57,901] INFO [kafka-streams-close-thread] [Consumer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions (org.apache.kafka.clients.consumer.KafkaConsumer)
+[2020-04-04 11:27:57,901] INFO [kafka-streams-close-thread] [Consumer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions (org.apache.kafka.clients.consumer.KafkaConsumer)
+[2020-04-04 11:27:57,902] INFO [kafka-streams-close-thread] [Producer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,902] INFO [kafka-streams-close-thread] [Producer clientId=_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,927] INFO [kafka-streams-close-thread] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:57,927] INFO [kafka-streams-close-thread] stream-thread [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3-StreamThread-1] Shutdown complete (org.apache.kafka.streams.processor.internals.StreamThread)
+[2020-04-04 11:27:57,929] INFO [kafka-streams-close-thread] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] State transition from PENDING_SHUTDOWN to NOT_RUNNING (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:57,929] INFO [main] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] Streams client stopped completely (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:57,929] INFO [main] [Producer clientId=c3-command] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,929] INFO [main] [Producer clientId=c3-command] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,938] INFO [control-center-shutdown-hook] Shutting down due to shutdown hook signal (io.confluent.controlcenter.ControlCenter)
+[2020-04-04 11:27:57,938] INFO [control-center-shutdown-hook] [Producer clientId=confluent-control-center-heartbeat-sender-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,938] INFO [control-center-shutdown-hook] [Producer clientId=confluent-control-center-heartbeat-sender-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,950] INFO [control-center-shutdown-hook] Closed monitoring heartbeat producer (io.confluent.controlcenter.streams.verify.MonitoringHeartbeatSender)
+[2020-04-04 11:27:57,950] INFO [control-center-shutdown-hook] Shutting down Kafka Streams (io.confluent.controlcenter.streams.KafkaStreamsManager)
+[2020-04-04 11:27:57,950] INFO [control-center-shutdown-hook] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] Already in the pending shutdown state, wait to complete shutdown (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:57,950] INFO [control-center-shutdown-hook] stream-client [_confluent-controlcenter-5-4-1-1-command-5932b7ee-82ea-4f4c-8886-117a864640b3] Streams client stopped completely (org.apache.kafka.streams.KafkaStreams)
+[2020-04-04 11:27:57,950] INFO [control-center-shutdown-hook] [Producer clientId=c3-command] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer)
+[2020-04-04 11:27:57,950] INFO [control-center-shutdown-hook] [Producer clientId=c3-command] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer)
