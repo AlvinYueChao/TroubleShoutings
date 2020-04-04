@@ -1,0 +1,47 @@
+spring.cloud.stream:
+  function.definition: receive;receive1
+  bindings:
+    receive-in-0:
+      destination: kafka1-in
+      binder: kafka1
+      contentType: application/*+avro
+    receive1-out-0:
+      destination: kafka2-out
+      binder: kafka2
+      contentType: application/json
+  binders:
+    kafka1:
+      type: kafka
+      environment.spring.cloud.stream.kafka.binder:
+        brokers: localhost:9092
+        jaas:
+          loginModule: org.apache.kafka.common.security.plain.PlainLoginModule
+          options:
+#            please use different username and password for the two brokers, because in my case, 
+#            these two topics kafka1-in and kafka2-out belongs to two scops so they need 
+#            different authentications
+            username: admin-1
+            password: admin-secret-1
+    kafka2:
+      type: kafka
+      environment.spring.cloud.stream.kafka.binder:
+        brokers: localhost:9093
+        zkNodes: localhost:2182
+        jaas:
+          loginModule: org.apache.kafka.common.security.plain.PlainLoginModule
+          options:
+            username: admin-2
+            password: admin-secret-2
+  kafks:
+    binder:
+      configuration:
+        security.protocol: SASL_PLAINTEXT
+        sasl.mechanism: PLAIN
+    bindings:
+      receive-in-0:
+        consumer:
+          configuration:
+            group.id: receive-in-0-group
+            schema.registry.url: http://localhost:8081
+            key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value.deserializer: io.confluent.kafka.streams.avro.SpecificAvroDeserializer

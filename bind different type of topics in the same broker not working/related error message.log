@@ -1,0 +1,188 @@
+2020-03-30 22:17:21.110		INFO [		main] trationDelegate$BeanPostProcessorCheker : Bean 'org.springframework.kafka.annotation.kafkaBootstrapconfiguration' of type [org.springframework.kafka.annotation.kafkaBootstrapconfiguration$$EnhanderBySpringCGLIB$$3446e155] is noteligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-30 22:17:21.314		INFO [		main] o.a.k.clients.admin.AdminClientConfig		: AdminClientConfig values:
+	bootstrap.servers = [<broker list>]
+	client.id =
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+    security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-03-30 22:17:21.314		INFO [		main] o.a.k.c.s.authenticator.AbstractLogin		: Successfully logged in.
+2020-03-30 22:17:21.319		INFO [		main] o.a.kafka.common.utils.AppInfoParser      : Kafka version : 2.0.1
+2020-03-30 22:17:21.319		INFO [		main] o.a.kafka.common.utils.AppInfoParser      : Kafka commitId : 2a121f7b1d402825
+2020-03-30 22:17:21.319		INFO [		main] o.s.c.s.b.k.p.KafkaTopicProvisioner		: Auto creation of topics is disabled.
+2020-03-30 22:17:21.367		INFO [		main] o.a.k.clients.consumer.ConsumerConfig    	: ConsumerConfig values: 
+    auto.commit.interval.ms = 100
+    auto.offset.reset = latest
+    bootstrap.servers = [<broker list>]
+    check.crcs = true
+    client.id = 
+    connections.max.idle.ms = 540000
+    enable.auto.commit = true
+    exclude.internal.topics = true
+    fetch.max.bytes = 52428800
+    fetch.max.wait.ms = 500
+    fetch.min.bytes = 1
+    group.id = demo
+    heartbeat.interval.ms = 3000
+    interceptor.classes = null
+    internal.leave.group.on.close = true
+    isolation.level = read_uncommitted
+    key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+    max.partition.fetch.bytes = 1048576
+    max.poll.interval.ms = 300000
+    max.poll.records = 500
+    metadata.max.age.ms = 300000
+    metric.reporters = []
+    metrics.num.samples = 2
+    metrics.recording.level = INFO
+    metrics.sample.window.ms = 30000
+    partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+    receive.buffer.bytes = 65536
+    reconnect.backoff.max.ms = 1000
+    reconnect.backoff.ms = 50
+    request.timeout.ms = 305000
+    retry.backoff.ms = 100
+    sasl.jaas.config = null
+    sasl.kerberos.kinit.cmd = /usr/bin/kinit
+    sasl.kerberos.min.time.before.relogin = 60000
+    sasl.kerberos.service.name = null
+    sasl.kerberos.ticket.renew.jitter = 0.05
+    sasl.kerberos.ticket.renew.window.factor = 0.8
+    sasl.mechanism = PLAIN
+    security.protocol = SASL_PLAINTEXT
+    send.buffer.bytes = 131072
+    session.timeout.ms = 15000
+    ssl.cipher.suites = null
+    ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+    ssl.endpoint.identification.algorithm = null
+    ssl.key.password = null
+    ssl.keymanager.algorithm = SunX509
+    ssl.keystore.location = null
+    ssl.keystore.password = null
+    ssl.keystore.type = JKS
+    ssl.protocol = TLS
+    ssl.provider = null
+    ssl.secure.random.implementation = null
+    ssl.trustmanager.algorithm = PKIX
+    ssl.truststore.location = null
+    ssl.truststore.password = null
+    ssl.truststore.type = JKS
+    value.deserializer = class io.confluent.kafka.stream.serdes.avro.SpecificAvroDeserializer
+
+2020-03-30 22:17:21.436		INFO [		main] i.c.k.s.KafkaAvroDeserializerConfig	: KafkaAvroDeserializerConfig values:
+	schema.registry.url = [<avro schema registry url>]
+	basic.auth.user.info = [hidden]
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	schema.registry.basic.auth.user.info = [hidden]
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2020-03-30 22:17:21.470		INFO [		main] o.a.k.c.s.authenticator.AbstractLogin		: Successfully logged in.
+2020-03-30 22:17:21.544		WARN [		main] o.a.k.clients.consumer.ConsumerConfig		: The configuration 'schema.registry.url' was supplied but isn't a knownconfig
+2020-03-30 22:17:21.544		INFO [		main] o.a.kafka.common.utils.AppInfoParser      : Kafka version : 2.0.1
+2020-03-30 22:17:21.544		INFO [		main] o.a.kafka.common.utils.AppInfoParser      : Kafka commitId : 2a121f7b1d402825
+2020-03-30 22:17:21.857		INFO [		main] org.apache.kafka.clients.Metadata			: Cluster ID: d3n7Snc2TFmSFcNsHjqgVw
+2020-03-30 22:17:21.868    ERROR [		main] o.s.c.s.b.k.p.KafkaTopicProvisioner 		: Failed to obtain partition information
+
+org.apache.kafka.common.errors.TopicAuthorizationException: Not authorized to access topics: [<Avro consumer topic>]
+
+2020-03-30 22:17:21.869		INFO [		main] o.a.k.clients.admin.AdminClientConfig		: AdminClientConfig values:
+	bootstrap.servers = [<broker list>]
+	client.id =
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+    security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-03-30 22:17:21.869		INFO [		main] o.a.k.c.s.authenticator.AbstractLogin		: Successfully logged in.
+2020-03-30 22:17:21.872		INFO [		main] o.a.kafka.common.utils.AppInfoParser      : Kafka version : 2.0.1
+2020-03-30 22:17:21.872		INFO [		main] o.a.kafka.common.utils.AppInfoParser      : Kafka commitId : 2a121f7b1d402825
+2020-03-30 22:17:22.456		WARN [		main] o.a.kafka.common.utils.AppInfoParser      : No partitions have been retrieved for the topic ([<Avro consumer topic>]). This will affect the health check
+2020-03-30 22:17:22.456		WARN [		main] o.a.kafka.common.utils.AppInfoParser		: The number of expected partitions was: 1, but 0 has been found instead. There will be 1 idle consumers
+2020-03-30 22:17:22.457	   ERROR [		main] o.s.cloud.stream.binding.BindingService	: Failed to create consumer binding; retrying in 30 seconds
+
+org.springframework.cound.stream.binder.BinderException: Exception thrown while starting consumer: 
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:435)
+    at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:97)
+    at org.springframework.cloud.stream.binder.AbstractBinder.bindConsumer(AbstractBinder.java:142)
+    at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:144)
+    at org.springframework.cloud.stream.binding.BindingService.doBindConsumer(BindingService.java:122)
+    at org.springframework.cloud.stream.binding.BindableProxyFactory.createAndBindInputs(BindableProxyFactory.java:254)
+    at org.springframework.cloud.stream.binding.InputBindingLifecycle.doStartWithBindable(InputBindingLifecycle.java:58)
+    at java.util.LindedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+    at org.springframework.cloud.stream.binding.AbstractBindingLifecycle.start(InputBindingLifecycle.java:48)
+    ...
+Caused by: java.lang.IllegalArguementException: A list of partitions must be privided 
+	at org.springframework.util.Assert.isTrue(Assert.java:118)
+	at org.springframework.cloud.stream.binder.kafka.KafkaMessageChannelBinder.createConsumerEndpoint(KafkaMessageChannelBinder.jave:432)
+	at org.springframework.cloud.stream.binder.kafka.KafkaMessageChannelBinder.createConsumerEndpoint(KafkaMessageChannelBinder.jave:132)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder.doBindConsumer(AbstractMessageChannelBinder.java:382)
+	... 24 common frames omitted

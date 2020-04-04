@@ -1,0 +1,49 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          autoCreateTopics: false
+          brokers: [<broker list>]
+          zkNodes: [<zookeeper nodes>]
+          configuration:
+            security:
+              protocol: SASL_PLAINTEXT
+            sasl:
+              mechanism: PLAIN
+        bindings:
+          [<Avro consumer channel>]:
+          consumer:
+            autoConmitOffset: true
+            configuration:
+              schema.registry.url: [<avro schema registry url>]
+              key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+              value.deserializer: io.confluent.kafka.stream.serdes.avro.SpecificAcroDeserializer
+      binders:
+        [<kafka binder1>]:
+          type: kafka
+          environment.spring.cloud.stream.kafka.binder:
+            jaas:
+              loginModule: org.apache.kafka.common.security.plain.PlainLoginModule
+              controlFlag: required
+              options:
+                username: [<username1>]
+                password: [<password1>]
+        [<kafka binder2>]:
+          type: kafka
+          environment.spring.cloud.stream.kafka.binder:
+            jaas:
+              loginModule: org.apache.kafka.common.security.plain.PlainLoginModule
+              controlFlag: required
+              options:
+                username: [<username2>]
+                password: [<password2>]
+      bindings:
+        [<Json producer channel>]:
+          binder: [<kafka binder1>]
+          destination: [<Json producer topic>]
+          contentType: aplication/Json
+        [<Avro consumer channel>]:
+          binder: [<kafka binder2>]
+          destination: [<Avro consumer topic>]
+          contentType: aplication/*+avro
